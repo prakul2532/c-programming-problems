@@ -44,5 +44,23 @@
 using namespace std;
 
 int main(){
-    
+    char choice, random;
+
+    do {
+        cout << "enter the letter :- ";
+        cin >> random;
+
+        if(random == 'a' || random == 'e' || random == 'i' || random == 'o' || random == 'u' ||
+           random == 'A' || random == 'E' || random == 'I' || random == 'O' || random == 'U') {
+            cout << random << " is a vowel\n";
+        } else {
+            cout << random << " is a consonant\n";
+        }
+
+        cout << "do you want to try again (y/n) :- ";
+        cin >> choice;
+
+    } while (choice == 'y');
+
+    return 0;
 }
